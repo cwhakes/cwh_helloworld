@@ -1,0 +1,11 @@
+[package]
+name = "cwh_helloworld"
+version = "0.1.0"
+authors = ["William"]
+edition = "2018"
+
+[dependencies]
+rocket = "*"
+rocket_codegen = "*"
+rocket_contrib = "*"
+
