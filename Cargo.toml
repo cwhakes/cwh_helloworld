@@ -5,7 +5,5 @@ authors = ["William"]
 edition = "2018"
 
 [dependencies]
-rocket = "*"
-rocket_codegen = "*"
-rocket_contrib = "*"
-
+rocket = "0.3"
+rocket_codegen = "0.3"
