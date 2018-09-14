@@ -1,4 +1,6 @@
 language: rust
+rust:
+- nightly
 
 before_install:
 - openssl aes-256-cbc -K $encrypted_7e3a9fb81488_key -iv $encrypted_7e3a9fb81488_iv
@@ -6,6 +8,6 @@ before_install:
 
 deploy:
   provider: gae
-  keyfile: "~/secure.json"
+  keyfile: ~/secure.json
   project: cwh-helloworld
   skip_cleanup: true
