@@ -1,8 +1,6 @@
 FROM centos:7
 MAINTAINER Will Hakes <info@cwilliamhakes.com>
 
-EXPOSE 8080
-
 ENV SOURCES=/sources
 
 RUN yum update -y
@@ -15,4 +13,4 @@ COPY ./ $SOURCES
 WORKDIR $SOURCES
 RUN cargo build --release
 
-CMD ROCKET_ENV=production ./target/release/cwh_helloworld
+CMD ROCKET_ENV=production ROCKET_PORT=$PORT ./target/release/cwh_helloworld
